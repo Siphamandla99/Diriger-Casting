@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Diriger Casting Agency - We Recruit Talent</title>
+<meta name="description" content="Diriger Casting Agency Cape Town - We Recruit Talent for Film, TV Commercials and Film Extras">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#FFF8E7;color:#0A2342}
+header{background:#FFF8E7;color:#0A2342;padding:12px 16px;position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #0A2342}
+.logo{display:flex;align-items:center;gap:10px}.logo-icon{width:62px;height:62px;background:#0A2342;border-radius:6px;display:flex;flex-direction:column;overflow:hidden;border:2px solid #0A2342}.logo-top{height:18px;background:repeating-linear-gradient(135deg,#0A2342,#0A2342 10px,#FFF8E7 10px,#FFF8E7 20px)}.logo-bot{flex:1;display:flex;align-items:center;justify-content:center;color:#1A6FB5;font-size:28px}
+header b{font-size:26px;letter-spacing:1px}header span{color:#1A6FB5;font-size:12px;display:block;letter-spacing:3px}
+nav a{color:#0A2342;text-decoration:none;margin:0 8px;font-size:15px;font-weight:bold}nav a.btn-nav{background:#1A6FB5;color:#fff;padding:8px 14px;border-radius:20px}
+.hero{text-align:center;padding:36px 16px;background:#fff}.hero h1{font-size:36px;margin:8px 0;letter-spacing:1px}.btn{background:#1A6FB5;color:#fff;padding:14px 22px;border-radius:8px;display:inline-block;text-decoration:none;font-weight:bold;border:none;cursor:pointer}
+.card{background:#fff;border:1px solid #1A6FB5;border-radius:10px;padding:16px;margin:10px 0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+input,select,textarea{width:100%;padding:11px;margin:6px 0;border:1px solid #ccc;border-radius:6px}label{font-size:13px;font-weight:bold}
+section{max-width:950px;margin:auto;padding:16px}.hidden{display:none}.warn{background:#FFF3CD;padding:10px;border-radius:8px;font-size:13px}
+footer{background:#0A2342;color:#fff;text-align:center;padding:22px;font-size:13px;line-height:1.6}
+.policy-box{background:#f7f7f7;border:1px solid #ddd;padding:12px;font-size:12px;height:260px;overflow-y:scroll;white-space:pre-wrap;margin:8px 0}
+@media(max-width:600px){.grid{grid-template-columns:1fr}nav{font-size:12px}.hero h1{font-size:26px}}
+</style></head><body>
+<header><div class="logo"><div class="logo-icon"><div class="logo-top"></div><div class="logo-bot">◍</div></div><div><b>DIRIGER</b><span>CASTING AGENCY</span></div></div><nav><a href="#" onclick="show('home')">Home</a><a href="#" class="btn-nav" onclick="show('join')">Join</a><a href="#" onclick="show('find')">Find Talent</a><a href="#" onclick="show('casting')">Casting Calls</a><a href="#" onclick="show('contact')">Contact</a></nav></header>
+
+<section id="home"><div class="hero"><h1>WE RECRUIT TALENT</h1><p>Cape Town Casting Agency | Actors • Extras</p><a class="btn" href="#" onclick="show('join')">Join as Talent - FREE</a><br><br><a class="btn" style="background:#25D366" href="https://wa.me/27730730775">WhatsApp 0730730775</a></div>
+<h2>ABOUT US</h2><p>Diriger Casting Agency is Cape Town's premier casting agency. We register and place background actors and extras with film, television, advertising and photographic productions in South Africa.</p>
+<h2>OUR SERVICES</h2><div class="grid"><div class="card"><b>Casting for Film / TV / Commercials</b><p>Feature Films, TV Shows, Commercials, Photoshoots</p></div><div class="card"><b>Extras & Background Artists</b><p>Professional Background Artists for all Productions</p></div></div></section>
+
+<section id="join" class="hidden">
+<h2>JOIN AS TALENT - FREE REGISTRATION</h2><p><b>Do NOT type your ID number here.</b> We only ask ID Type.</p>
+<form id="talentForm">
+<h3>1. Personal Details</h3><div class="grid"><div><label>First Name*</label><input required name="First Name"></div><div><label>Surname*</label><input required name="Surname"></div></div>
+<label>Gender*</label><select required name="Gender"><option value="">Select</option><option>Female</option><option>Male</option></select><label>Nationality*</label><input required name="Nationality"><label>Date of Birth* - 18+ unless parent/guardian</label><input required type="date" name="DOB">
+<label>Type of Identification* - Do NOT type ID number</label><select required name="ID Type"><option>South African ID</option><option>Passport</option><option>Work permit / visa</option></select>
+<h3>2. Contact</h3><label>Mobile*</label><input required name="Mobile"><label>WhatsApp*</label><input required name="WhatsApp"><label>Emergency Number*</label><input required name="Emergency Number"><label>Emergency Name*</label><input required name="Emergency Name"><label>Email*</label><input required type="email" name="Email">
+<h3>3. Medical & Safety</h3><label>Medication / Allergies?</label><select name="Medication"><option>No</option><option>Yes</option></select><textarea name="Medication Details"></textarea>
+<label>Operations in last 5 years?</label><select name="Operations"><option>No</option><option>Yes</option></select><textarea name="Operations Details"></textarea>
+<label>Serious conditions?</label><select name="Conditions"><option>No</option><option>Yes</option></select><textarea name="Conditions Details"></textarea>
+<h3>4. Address</h3><label>Address 1*</label><input required name="Address 1"><label>Suburb</label><input name="Suburb"><label>City*</label><input required name="City"><label>Post Code*</label><input required name="Post Code"><label>Country*</label><select name="Country"><option>South Africa</option><option>Other</option></select><label>Cape Town Area*</label><input required name="Cape Town Area">
+<h3>5. Appearance</h3><label>Ethnicity (Optional)</label><select name="Ethnicity"><option>Prefer not to say</option><option>Black African</option><option>Coloured</option><option>Indian/Asian</option><option>White</option><option>Other</option></select><label>Height (cms)*</label><input required name="Height"><label>Tattoos?</label><select name="Tattoos"><option>No</option><option>Yes but can cover</option><option>Yes visible</option></select>
+<h3>6. Further Info</h3><label>Days available*</label><select name="Days"><option>Any day</option><option>Weekdays only</option><option>Weekends only</option></select><label>Own Transport*</label><select name="Own Transport"><option>Yes</option><option>No</option></select><label>Can you drive?</label><select name="Drive"><option>Manual</option><option>Automatic</option><option>Both</option><option>No</option></select><label>Can you swim?</label><select name="Swim"><option>Yes (confident)</option><option>Basic</option><option>No</option></select>
+<h3>7. Skills</h3><label>Languages*</label><input name="Languages"><label>Experience</label><textarea name="Experience"></textarea>
+<h3>8. FULL POPIA POLICY v1.0 18 Nov 2026</h3><div class="policy-box">POPIA Privacy and Data Protection Policy - Version 1.0 | Effective 18 November 2026
+Diriger Talent processes personal information of Talent for casting purposes. We collect identity, contact, appearance, photos, banking, availability, special info (ethnicity where casting brief requires it, health for safety), info about minors with parent consent. We collect directly from you, from Productions, from referrals. We process to register, verify ID/age/right to work, submit to Productions, manage Bookings, pay you, communicate, protect health/safety, comply with law. Lawful grounds: consent, contract, law, legitimate interest. We share only needed info with Productions, service providers as operators, advisers, authorities. We do not sell info. Keep data while on database + 12 months after last Booking, financial 5 years. Security: password-protected, secure cloud, confidentiality. Rights: access, correct, delete, withdraw consent, object, complain to Regulator www.inforegulator.org.za. Children under 18 only with parent/guardian consent. Photos used to submit to Productions, not published without separate consent. Contact Information Officer: 0730730775.</div>
+<label><input type="checkbox" required> I have read FULL POPIA</label><br><label><input type="checkbox" required> I consent to collecting info for casting</label><br><label><input type="checkbox" required> I consent to sharing profile with Productions</label>
+<h3>9. FULL TALENT T&Cs v1.0 18 Nov 2026</h3><div class="policy-box">Talent Terms and Conditions - Version 1.0 | Effective 18 November 2026
+1. Definitions: Booking, Commission 20% excl VAT, Diriger, Fee, Production, Talent.
+2. Role: Casting agency, acts as agent, no guarantee of Bookings, not employer.
+3. Registration: 18+, under 18 via parent/guardian, valid right to work, accurate info, recent true photos, no fee.
+4. Bookings: Offers via phone/email/SMS/WhatsApp, confirmed once accepted, schedules may change, wardrobe in confirmation.
+5. Conduct: On time, follow instructions, no influence, respect, no photos of principal cast, confidentiality, NDA if needed.
+6. Cancellations: Tell early if cannot attend, late/no-show may be removed, suspend, recover cost, Production cancellations not our fault.
+7. Fees: Fee in confirmation, Commission 20% excl VAT, paid within 7 days after cleared payment from Production, correct banking, own tax.
+8. Non-exclusivity: May register elsewhere, not same date, 12 months non-circumvention for Production we introduced.
+9. Image: Non-exclusive licence to use photos/profile for submissions, marketing only if agreed.
+10. Confidentiality: Keep non-public info confidential.
+11. Privacy: Per POPIA Policy.
+12. Health/Safety: Safe environment, follow safety, report unsafe, zero tolerance harassment, may leave unsafe, no nudity/stunts unless agreed in writing.
+13. Minors: Parent must be present, permits per BCEA/Children's Act, no hazardous/sexual work.
+14. Liability: Not liable for Production acts, indirect loss limited to Commission for that Booking.
+15. Suspension: May end anytime, must still attend confirmed Booking unless released, may suspend for breach/false info/no-shows.
+16. Law: South Africa, try resolve 14 days, then mediation/court, rights to CCMA/Regulator not affected.
+17. General: Entire agreement, may update with 20 days notice, electronic acceptance valid.</div>
+<label><input type="checkbox" required> I have read FULL T&Cs</label><br><label><input type="checkbox" required> I agree to 20% commission</label><br><label><input type="checkbox" required> I agree to Conduct Rules</label>
+<br><br><label>Full Name (Signature)*</label><input required name="Signature"><label>Date*</label><input required type="date" name="Date"><br><button class="btn" type="submit">SUBMIT REGISTRATION - Send to Diriger</button>
+</form></section>
+
+<section id="find" class="hidden"><h2>FIND TALENT</h2><div class="card"><h3>Need Talent?</h3><p>Directors & Producers - Contact our team for actors & extras.</p><h2>0730730775</h2><a class="btn" style="background:#25D366" href="https://wa.me/27730730775?text=Hi%20Diriger%2C%20I%20need%20talent%20for...">WhatsApp Our Team</a></div></section>
+
+<section id="casting" class="hidden"><h2>CASTING CALLS</h2><div class="card" style="border:2px solid #0A2342"><b>CASTING NOTICE</b><p>Selected talent will be contacted directly with your call time, location and wardrobe requirements. Please keep your phone on, arrive 30 minutes early, and come prepared with a neat, natural look and a positive professional attitude. If you confirmed availability but can no longer attend, notify us immediately so we can place another artist.</p></div>
+<div class="grid"><div class="card"><b>TV Commercials - Cape Town</b><p>Any Age - All Looks Welcome</p></div><div class="card"><b>Film Extras - Cape Town</b><p>Any Age - Background Artists Needed</p></div></div></section>
+
+<section id="contact" class="hidden"><h2>CONTACT US</h2><p>WhatsApp: <b>0730730775</b> | Operating Times: Mon - Fri 09:00 - 17:00</p>
+<form onsubmit="contactSend(event)"><label>Full Name*</label><input required id="cName"><label>Email*</label><input required type="email" id="cEmail"><label>Phone*</label><input required id="cPhone"><label>Subject*</label><select id="cSubject"><option>General Enquiry</option><option>Join as Talent</option><option>Book Talent</option><option>Casting Call</option><option>Complaint</option></select><label>Message*</label><textarea required id="cMsg"></textarea><br><button class="btn">Send Message via WhatsApp</button></form></section>
+
+<footer>
+Diriger Casting Agency<br>
+Operating Times: Mon - Fri 09:00 - 17:00<br>
+WhatsApp: 0730730775<br>
+POPIA Policy v1.0 18 Nov 2026 • Talent T&Cs v1.0 18 Nov 2026
+</footer>
+<script>
+function show(id){['home','join','find','casting','contact'].forEach(x=>document.getElementById(x).classList.toggle('hidden',x!==id));window.scrollTo(0,0)}
+document.getElementById('talentForm').addEventListener('submit',function(e){e.preventDefault();let d=new FormData(e.target);let t='NEW DIRIGER TALENT REGISTRATION%0A';d.forEach((v,k)=>{if(v) t+=k+': '+v+'%0A'});window.open('https://wa.me/27730730775?text='+t);alert('Thank you! Registration sent to WhatsApp. Please send your 4 photos to 0730730775.');});
+function contactSend(e){e.preventDefault();let m='CONTACT DIRIGER%0AName: '+document.getElementById('cName').value+'%0AEmail: '+document.getElementById('cEmail').value+'%0APhone: '+document.getElementById('cPhone').value+'%0ASubject: '+document.getElementById('cSubject').value+'%0AMessage: '+document.getElementById('cMsg').value;window.open('https://wa.me/27730730775?text='+m);}
+</script></body></html>
